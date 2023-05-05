@@ -1,26 +1,26 @@
-type CityType={
-    title:string
-    countryTitle:string
+type CityType = {
+    title: string
+    countryTitle: string
 }
-type AddresType={
-    streetTitle:string
-    city:CityType
+type AddresType = {
+    streetTitle: string
+    city: CityType
 }
-type TechType={
-    id:number
-    title:string
-}
-type StudentType = {
+type TechType = {
     id: number
-    name:string
-    age:number
-    isActive:boolean
-    addres:AddresType
-    technologies:TechType[]
+    title: string
+}
+export type StudentType = {
+    id: number
+    name: string
+    age: number
+    isActive: boolean
+    addres: AddresType
+    technologies: TechType[]
 }
 
 
-const student: StudentType = {
+export const student: StudentType = {
     id: 1,
     name: "Dimych",
     age: 32,
